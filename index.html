@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>낭만뱅커 | 돈과 Ai, 21세기 문명을 움직이는 2개의 엔진</title>
+    <title>낭만뱅커 | 돈과 문명 그리고 Ai</title>
     <style>
+        /* 기본 여백 제거 및 배경색 설정 */
         body {
             margin: 0;
             padding: 0;
             background-color: #000;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
         }
+        /* 컨테이너를 화면 너비 100%로 설정 */
         .container {
             position: relative;
             width: 100%;
-            max-width: 1000px; /* 이미지 원본 비율에 맞게 조정 */
+            max-width: 100%; /* 제한 없이 꽉 차게 변경 */
             line-height: 0;
         }
+        /* 이미지가 컨테이너 너비에 꽉 차도록 설정 */
         img {
             width: 100%;
             height: auto;
             display: block;
         }
-        /* 투명 클릭 영역 공통 스타일 */
+        /* 투명 클릭 영역 (버튼 활성화) */
         .touch-link {
             position: absolute;
-            background: rgba(255, 255, 255, 0); /* 완전 투명 */
+            background: rgba(255, 255, 255, 0);
             cursor: pointer;
             border: none;
         }
-        /* 각 버튼 위치 (이미지 전체 크기 대비 %로 설정) */
+        /* 버튼 좌표 (이미지 크기에 비례하여 자동 조정됨) */
         .link-profile { width: 14%; height: 8%; left: 8%; bottom: 7%; }
         .link-youtube { width: 22%; height: 8%; left: 23%; bottom: 7%; }
         .link-blog { width: 22%; height: 13%; left: 46%; bottom: 7%; }
 
-        /* 마우스를 올렸을 때 클릭 가능하다는 느낌을 살짝 주는 효과 (선택사항) */
         .touch-link:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
         }
     </style>
 </head>
@@ -49,10 +51,8 @@
         <img src="홈피표지.jpg" alt="낭만뱅커 브랜드 아이덴티티">
         
         <a href="https://blog.naver.com/여기에_프로필_주소" class="touch-link link-profile" title="Profile"></a>
-        
-        <a href="https://www.youtube.com/@topbanker21" class="touch-link link-youtube" title="YouTube"></a>
-        
-        <a href="https://blog.naver.com/spaceofinspiration" class="touch-link link-blog" title="Blog"></a>
+        <a href="https://www.youtube.com/@nangmanbanker" class="touch-link link-youtube" title="YouTube"></a>
+        <a href="https://blog.naver.com/여기에_블로그_주소" class="touch-link link-blog" title="Blog"></a>
     </div>
 
 </body>
