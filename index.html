@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>낭만뱅커 | 21세기 문명의 2엔진</title>
+    <title>낭만뱅커 | 돈과 Ai, 21세기 문명을 움직이는 2개의 엔진</title>
     <style>
         body {
             margin: 0;
@@ -15,8 +15,9 @@
             min-height: 100vh;
         }
         .container {
+            position: relative;
             width: 100%;
-            max-width: 1200px;
+            max-width: 1000px; /* 이미지 원본 비율에 맞게 조정 */
             line-height: 0;
         }
         img {
@@ -24,11 +25,35 @@
             height: auto;
             display: block;
         }
+        /* 투명 클릭 영역 공통 스타일 */
+        .touch-link {
+            position: absolute;
+            background: rgba(255, 255, 255, 0); /* 완전 투명 */
+            cursor: pointer;
+            border: none;
+        }
+        /* 각 버튼 위치 (이미지 전체 크기 대비 %로 설정) */
+        .link-profile { width: 14%; height: 8%; left: 13%; bottom: 10%; }
+        .link-youtube { width: 22%; height: 8%; left: 28%; bottom: 10%; }
+        .link-blog { width: 22%; height: 13%; left: 51%; bottom: 10%; }
+
+        /* 마우스를 올렸을 때 클릭 가능하다는 느낌을 살짝 주는 효과 (선택사항) */
+        .touch-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
         <img src="홈피표지.jpg" alt="낭만뱅커 브랜드 아이덴티티">
+        
+        <a href="https://blog.naver.com/여기에_프로필_주소" class="touch-link link-profile" title="Profile"></a>
+        
+        <a href="https://www.youtube.com/@topbanker21" class="touch-link link-youtube" title="YouTube"></a>
+        
+        <a href="https://blog.naver.com/spaceofinspiration" class="touch-link link-blog" title="Blog"></a>
     </div>
+
 </body>
 </html>
